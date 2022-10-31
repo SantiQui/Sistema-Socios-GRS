@@ -1,0 +1,8 @@
+C:\repo\net\clases\Socios\ConsolaSocios\bin\Debug\ConsolaSocios.exe.config
+C:\repo\net\clases\Socios\ConsolaSocios\bin\Debug\ConsolaSocios.exe
+C:\repo\net\clases\Socios\ConsolaSocios\bin\Debug\ConsolaSocios.pdb
+C:\repo\net\clases\Socios\ConsolaSocios\obj\Debug\ConsolaSocios.csproj.AssemblyReference.cache
+C:\repo\net\clases\Socios\ConsolaSocios\obj\Debug\ConsolaSocios.csproj.SuggestedBindingRedirects.cache
+C:\repo\net\clases\Socios\ConsolaSocios\obj\Debug\ConsolaSocios.csproj.CoreCompileInputs.cache
+C:\repo\net\clases\Socios\ConsolaSocios\obj\Debug\ConsolaSocios.exe
+C:\repo\net\clases\Socios\ConsolaSocios\obj\Debug\ConsolaSocios.pdb

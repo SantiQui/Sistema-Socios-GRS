@@ -1,0 +1,1 @@
+[{"idElemento":1,"nombre":"Soga","cantidad":10},{"idElemento":2,"nombre":"pelota size 5","cantidad":20}]

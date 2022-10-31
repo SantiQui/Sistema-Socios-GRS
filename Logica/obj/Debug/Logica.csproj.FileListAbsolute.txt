@@ -1,0 +1,15 @@
+C:\repo\net\clases\Socios\Logica\bin\Debug\Logica.dll
+C:\repo\net\clases\Socios\Logica\bin\Debug\Logica.pdb
+C:\repo\net\clases\Socios\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\repo\net\clases\Socios\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\repo\net\clases\Socios\Logica\obj\Debug\Logica.dll
+C:\repo\net\clases\Socios\Logica\obj\Debug\Logica.pdb
+C:\repo\BitBucket\Socios\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\repo\BitBucket\Socios\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\repo\BitBucket\Socios\Logica\obj\Debug\Logica.dll
+C:\repo\BitBucket\Socios\Logica\obj\Debug\Logica.pdb
+C:\repo\BitBucket\Socios\Logica\bin\Debug\Logica.dll
+C:\repo\BitBucket\Socios\Logica\bin\Debug\Logica.pdb
+C:\repo\BitBucket\Socios\Logica\bin\Debug\Newtonsoft.Json.dll
+C:\repo\BitBucket\Socios\Logica\bin\Debug\Newtonsoft.Json.xml
+C:\repo\BitBucket\Socios\Logica\obj\Debug\Logica.csproj.CopyComplete

@@ -1,0 +1,1 @@
+[{"idProfesor":1,"correoElec":"marry.guaycu@gmail.com","activo":true,"dni":34221217,"nombre":"Luciano ","apellido":"Ramallo","fechaNac":"jueves, 7 de julio de 1994","telefono":"3493449087","tipoDoc":"DNI"}]
