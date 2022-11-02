@@ -35,26 +35,30 @@
             this.txtBContraseña = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnIngresar
             // 
-            this.btnIngresar.Location = new System.Drawing.Point(1092, 619);
+            this.btnIngresar.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnIngresar.FlatAppearance.BorderSize = 0;
+            this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnIngresar.Location = new System.Drawing.Point(312, 198);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(91, 30);
             this.btnIngresar.TabIndex = 0;
             this.btnIngresar.Text = "Ingresar";
-            this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.UseVisualStyleBackColor = false;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // txtUsuario
             // 
             this.txtUsuario.AutoSize = true;
-            this.txtUsuario.BackColor = System.Drawing.Color.DarkGreen;
+            this.txtUsuario.BackColor = System.Drawing.SystemColors.ControlText;
             this.txtUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtUsuario.Location = new System.Drawing.Point(22, 77);
+            this.txtUsuario.Location = new System.Drawing.Point(266, 88);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(62, 18);
             this.txtUsuario.TabIndex = 1;
@@ -63,7 +67,7 @@
             // txtBUsuario
             // 
             this.txtBUsuario.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBUsuario.Location = new System.Drawing.Point(25, 98);
+            this.txtBUsuario.Location = new System.Drawing.Point(269, 109);
             this.txtBUsuario.Name = "txtBUsuario";
             this.txtBUsuario.Size = new System.Drawing.Size(187, 26);
             this.txtBUsuario.TabIndex = 2;
@@ -71,10 +75,10 @@
             // txtTitulo
             // 
             this.txtTitulo.AutoSize = true;
-            this.txtTitulo.BackColor = System.Drawing.Color.DarkGreen;
+            this.txtTitulo.BackColor = System.Drawing.SystemColors.ControlText;
             this.txtTitulo.Font = new System.Drawing.Font("Baskerville Old Face", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTitulo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtTitulo.Location = new System.Drawing.Point(60, 20);
+            this.txtTitulo.Location = new System.Drawing.Point(304, 31);
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(119, 43);
             this.txtTitulo.TabIndex = 3;
@@ -83,7 +87,7 @@
             // txtBContraseña
             // 
             this.txtBContraseña.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBContraseña.Location = new System.Drawing.Point(25, 148);
+            this.txtBContraseña.Location = new System.Drawing.Point(269, 166);
             this.txtBContraseña.Name = "txtBContraseña";
             this.txtBContraseña.PasswordChar = '*';
             this.txtBContraseña.Size = new System.Drawing.Size(187, 26);
@@ -92,10 +96,10 @@
             // txtContraseña
             // 
             this.txtContraseña.AutoSize = true;
-            this.txtContraseña.BackColor = System.Drawing.Color.DarkGreen;
+            this.txtContraseña.BackColor = System.Drawing.SystemColors.ControlText;
             this.txtContraseña.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtContraseña.Location = new System.Drawing.Point(22, 127);
+            this.txtContraseña.Location = new System.Drawing.Point(266, 145);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(89, 18);
             this.txtContraseña.TabIndex = 5;
@@ -105,30 +109,47 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkGreen;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.txtTitulo);
-            this.panel1.Controls.Add(this.txtBContraseña);
-            this.panel1.Controls.Add(this.txtBUsuario);
-            this.panel1.Controls.Add(this.txtContraseña);
-            this.panel1.Controls.Add(this.txtUsuario);
-            this.panel1.Location = new System.Drawing.Point(511, 231);
+            this.panel1.Location = new System.Drawing.Point(-1, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(240, 222);
+            this.panel1.Size = new System.Drawing.Size(228, 272);
             this.panel1.TabIndex = 6;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ControlText;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(455, 5);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(31, 31);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "X";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FRMLogin
             // 
             this.BackColor = System.Drawing.SystemColors.WindowText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1195, 661);
+            this.ClientSize = new System.Drawing.Size(488, 269);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.txtTitulo);
+            this.Controls.Add(this.txtContraseña);
+            this.Controls.Add(this.txtBContraseña);
+            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.txtBUsuario);
             this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FRMLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pantalla socios";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -144,6 +165,7 @@
         private System.Windows.Forms.TextBox txtBContraseña;
         private System.Windows.Forms.Label txtContraseña;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

@@ -44,5 +44,22 @@ namespace WindowsFormsApp1
                 this.Hide();
             }
         }
+
+        private void txtTitulo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FRMActividad frmActividad = new FRMActividad();
+            frmActividad.Show();
+            this.Hide();
+        }
     }
 }

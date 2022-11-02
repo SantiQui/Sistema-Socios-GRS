@@ -56,5 +56,17 @@ namespace WindowsFormsApp1
             frmSocio.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FRMSocio frmSocio = new FRMSocio();
+            frmSocio.Show();
+            this.Hide();
+        }
     }
 }

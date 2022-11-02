@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Logica;
+
 namespace WindowsFormsApp1
 {
     public partial class FRMInicio : Form
@@ -17,41 +17,54 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        
-
         private void FRMInicio_Load(object sender, EventArgs e)
         {
-            PersistenciaDeDatos instanciaPersistencia = new PersistenciaDeDatos();
-            instanciaPersistencia.InicializarArchivos();
-            Principal instanciaPrincipal = new Principal();
-            instanciaPrincipal.RellenarLista();
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnSocios_Click(object sender, EventArgs e)
         {
             FRMSocio frmSocio = new FRMSocio();
             frmSocio.Show();
             this.Hide();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnProfesores_Click(object sender, EventArgs e)
         {
-            FRMProfesores frmProfesores = new FRMProfesores();
-            frmProfesores.Show();
+            FRMProfesores frmProfesor = new FRMProfesores();
+            frmProfesor.Show();
             this.Hide();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnElementos_Click(object sender, EventArgs e)
         {
             FRMElemento frmElemento = new FRMElemento();
             frmElemento.Show();
+            this.Hide();
+
+        }
+
+        private void btnActividades_Click(object sender, EventArgs e)
+        {
+            FRMActividad frmActividad = new FRMActividad();
+            frmActividad.Show();
             this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FRMActividad frmActividad = new FRMActividad();
-            frmActividad.Show();
+            this.Close();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FRMLogin frmLogin = new FRMLogin();
+            frmLogin.Show();
             this.Hide();
         }
     }

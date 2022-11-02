@@ -36,12 +36,12 @@
             this.horarioInicioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horarioFinDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.actividadBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btnBusqueda = new System.Windows.Forms.Button();
-            this.txtBusqueda = new System.Windows.Forms.TextBox();
+            this.btnActualizar = new System.Windows.Forms.Button();
             this.btnAltaActividad = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnModActividad = new System.Windows.Forms.Button();
             this.btnBajaActividad = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgActividad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.actividadBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -98,21 +98,15 @@
             // 
             this.actividadBindingSource.DataSource = typeof(Logica.Actividad);
             // 
-            // btnBusqueda
+            // btnActualizar
             // 
-            this.btnBusqueda.Location = new System.Drawing.Point(1108, 98);
-            this.btnBusqueda.Name = "btnBusqueda";
-            this.btnBusqueda.Size = new System.Drawing.Size(75, 23);
-            this.btnBusqueda.TabIndex = 7;
-            this.btnBusqueda.Text = "Buscar";
-            this.btnBusqueda.UseVisualStyleBackColor = true;
-            // 
-            // txtBusqueda
-            // 
-            this.txtBusqueda.Location = new System.Drawing.Point(1002, 98);
-            this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(100, 20);
-            this.txtBusqueda.TabIndex = 6;
+            this.btnActualizar.Location = new System.Drawing.Point(781, 164);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.TabIndex = 7;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnAltaActividad
             // 
@@ -126,16 +120,6 @@
             this.btnAltaActividad.Text = "Alta Actividad";
             this.btnAltaActividad.UseVisualStyleBackColor = false;
             this.btnAltaActividad.Click += new System.EventHandler(this.btnAltaActividad_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1263, 694);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Volver";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnModActividad
             // 
@@ -163,26 +147,57 @@
             this.btnBajaActividad.UseVisualStyleBackColor = false;
             this.btnBajaActividad.Click += new System.EventHandler(this.btnBajaActividad_Click);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ControlText;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(1130, -2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(31, 31);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "X";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Arial", 18F);
+            this.btnBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack.Location = new System.Drawing.Point(1085, -2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(39, 31);
+            this.btnBack.TabIndex = 13;
+            this.btnBack.Text = "<";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // FRMActividad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1161, 701);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnBajaActividad);
             this.Controls.Add(this.btnModActividad);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.dtgActividad);
-            this.Controls.Add(this.btnBusqueda);
-            this.Controls.Add(this.txtBusqueda);
+            this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnAltaActividad);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FRMActividad";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRMActividad";
             this.Load += new System.EventHandler(this.FRMActividad_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgActividad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.actividadBindingSource)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -190,10 +205,8 @@
 
         private System.Windows.Forms.DataGridView dtgActividad;
         private System.Windows.Forms.BindingSource actividadBindingSource;
-        private System.Windows.Forms.Button btnBusqueda;
-        private System.Windows.Forms.TextBox txtBusqueda;
+        private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnAltaActividad;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idActividadDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn profesorDataGridViewTextBoxColumn;
@@ -201,5 +214,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn horarioFinDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnModActividad;
         private System.Windows.Forms.Button btnBajaActividad;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnBack;
     }
 }

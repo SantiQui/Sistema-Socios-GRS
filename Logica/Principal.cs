@@ -273,7 +273,20 @@ namespace Logica
             InstanciaPersistenciaDeDatos.GuardarArchivoElemento(ListaElemento);
         }
         
-
+        public void NuevoAltaSocio(int idSocio)
+        {
+            ListaSocios = ValidarSocio();
+            var socioNuevo = ListaSocios.Find(x =>x.idSocio == idSocio);
+            socioNuevo.activo = true;
+            InstanciaPersistenciaDeDatos.GuardarArchivoSocio(ListaSocios);
+        }
+        public void NuevoAltaProfesor(int idProfesor)
+        {
+            ListaProfesores = ValidarProfesor();
+            var profesorNuevo = ListaProfesores.Find(x => x.idProfesor == idProfesor);
+            profesorNuevo.activo = true;
+            InstanciaPersistenciaDeDatos.GuardarArchivoProfesor(ListaProfesores);
+        }
     }
 
 }

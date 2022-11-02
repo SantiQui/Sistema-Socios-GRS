@@ -38,6 +38,9 @@
             this.btnAltaElemento = new System.Windows.Forms.Button();
             this.btnBajaElemento = new System.Windows.Forms.Button();
             this.btnModElemento = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgElemento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elementoBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -128,18 +131,63 @@
             this.btnModElemento.UseVisualStyleBackColor = false;
             this.btnModElemento.Click += new System.EventHandler(this.btnModElemento_Click);
             // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Location = new System.Drawing.Point(504, 152);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.TabIndex = 17;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ControlText;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(1130, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(31, 31);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "X";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ControlText;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 18F);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(1085, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(39, 31);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "<";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FRMElemento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1161, 701);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnModElemento);
             this.Controls.Add(this.btnBajaElemento);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.dtgElemento);
             this.Controls.Add(this.btnAltaElemento);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FRMElemento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRMElemento";
             this.Load += new System.EventHandler(this.FRMElemento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgElemento)).EndInit();
@@ -159,5 +207,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idElementoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidadDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

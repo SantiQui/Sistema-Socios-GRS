@@ -35,8 +35,9 @@
             this.txtCantidad = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.Label();
             this.txtBNombre = new System.Windows.Forms.TextBox();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtTitulo
@@ -44,7 +45,7 @@
             this.txtTitulo.AutoSize = true;
             this.txtTitulo.Font = new System.Drawing.Font("Arial", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTitulo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtTitulo.Location = new System.Drawing.Point(485, 226);
+            this.txtTitulo.Location = new System.Drawing.Point(12, 9);
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(387, 42);
             this.txtTitulo.TabIndex = 24;
@@ -55,7 +56,7 @@
             this.txtID.AutoSize = true;
             this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtID.Location = new System.Drawing.Point(565, 295);
+            this.txtID.Location = new System.Drawing.Point(15, 68);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(108, 20);
             this.txtID.TabIndex = 23;
@@ -63,14 +64,14 @@
             // 
             // txtBCantidad
             // 
-            this.txtBCantidad.Location = new System.Drawing.Point(569, 410);
+            this.txtBCantidad.Location = new System.Drawing.Point(19, 183);
             this.txtBCantidad.Name = "txtBCantidad";
             this.txtBCantidad.Size = new System.Drawing.Size(122, 20);
             this.txtBCantidad.TabIndex = 21;
             // 
             // txtBId
             // 
-            this.txtBId.Location = new System.Drawing.Point(569, 318);
+            this.txtBId.Location = new System.Drawing.Point(19, 91);
             this.txtBId.Name = "txtBId";
             this.txtBId.Size = new System.Drawing.Size(61, 20);
             this.txtBId.TabIndex = 22;
@@ -80,7 +81,7 @@
             this.txtCantidad.AutoSize = true;
             this.txtCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCantidad.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtCantidad.Location = new System.Drawing.Point(565, 387);
+            this.txtCantidad.Location = new System.Drawing.Point(15, 160);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(73, 20);
             this.txtCantidad.TabIndex = 19;
@@ -91,7 +92,7 @@
             this.txtNombre.AutoSize = true;
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtNombre.Location = new System.Drawing.Point(565, 341);
+            this.txtNombre.Location = new System.Drawing.Point(15, 114);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(65, 20);
             this.txtNombre.TabIndex = 18;
@@ -99,24 +100,14 @@
             // 
             // txtBNombre
             // 
-            this.txtBNombre.Location = new System.Drawing.Point(569, 364);
+            this.txtBNombre.Location = new System.Drawing.Point(19, 137);
             this.txtBNombre.Name = "txtBNombre";
             this.txtBNombre.Size = new System.Drawing.Size(218, 20);
             this.txtBNombre.TabIndex = 20;
             // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(997, 626);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(90, 23);
-            this.btnCancelar.TabIndex = 17;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(1093, 626);
+            this.btnGuardar.Location = new System.Drawing.Point(1059, 666);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(90, 23);
             this.btnGuardar.TabIndex = 16;
@@ -124,12 +115,44 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ControlText;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(1132, -2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(31, 31);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "X";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Arial", 18F);
+            this.btnBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack.Location = new System.Drawing.Point(1087, -2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(39, 31);
+            this.btnBack.TabIndex = 26;
+            this.btnBack.Text = "<";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // FRMModElemento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(1195, 661);
+            this.ClientSize = new System.Drawing.Size(1161, 701);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.txtTitulo);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.txtBCantidad);
@@ -137,9 +160,10 @@
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtBNombre);
-            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FRMModElemento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRMModElemento";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -155,7 +179,8 @@
         private System.Windows.Forms.Label txtCantidad;
         private System.Windows.Forms.Label txtNombre;
         public System.Windows.Forms.TextBox txtBNombre;
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnBack;
     }
 }

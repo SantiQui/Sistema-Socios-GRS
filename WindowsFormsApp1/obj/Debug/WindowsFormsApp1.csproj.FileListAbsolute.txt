@@ -27,3 +27,32 @@ C:\repo\BitBucket\Socios\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FRMModProfe
 C:\repo\BitBucket\Socios\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FRMModSocio.resources
 C:\repo\BitBucket\Socios\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FRMModActividades.resources
 C:\repo\BitBucket\Socios\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FRMModElemento.resources
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\bin\Debug\Logica.dll
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.dll
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\bin\Debug\Logica.pdb
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.xml
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FRMActividad.resources
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FRMAltaActividad.resources
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FRMAltaElemento.resources
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FRMAltaProfesor.resources
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FRMElemento.resources
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FRMLogin.resources
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FRMInicio.resources
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FRMAltaSocio.resources
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FRMModActividades.resources
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FRMModElemento.resources
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FRMModProfesor.resources
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FRMModSocio.resources
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FRMProfesores.resources
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FRMSocio.resources
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

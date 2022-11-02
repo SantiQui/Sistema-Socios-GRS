@@ -71,5 +71,23 @@ namespace WindowsFormsApp1
             }
 
         }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            Principal principal = new Principal();
+            dtgActividad.DataSource = principal.ValidarActividad();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FRMInicio frmInicio = new FRMInicio();
+            frmInicio.Show();
+            this.Hide();
+        }
     }
 }

@@ -64,8 +64,35 @@ namespace WindowsFormsApp1
                     int idElemento = Convert.ToInt32(indice.Cells[0].Value);
                     Principal principal = new Principal();
                     principal.BajaElemento(idElemento);
+                    break;
                 }
             }
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            Principal principal = new Principal();
+            dtgElemento.DataSource = principal.ValidarElemento();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FRMInicio frmInicio = new FRMInicio();
+            frmInicio.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FRMInicio frmInicio = new FRMInicio();
+            frmInicio.Show();
+            this.Hide();
+
         }
     }
 }

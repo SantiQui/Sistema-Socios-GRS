@@ -13,3 +13,12 @@ C:\repo\BitBucket\Socios\Logica\bin\Debug\Logica.pdb
 C:\repo\BitBucket\Socios\Logica\bin\Debug\Newtonsoft.Json.dll
 C:\repo\BitBucket\Socios\Logica\bin\Debug\Newtonsoft.Json.xml
 C:\repo\BitBucket\Socios\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\Logica\bin\Debug\Logica.dll
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\Logica\bin\Debug\Logica.pdb
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\Logica\bin\Debug\Newtonsoft.Json.dll
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\Logica\bin\Debug\Newtonsoft.Json.xml
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\Logica\obj\Debug\Logica.dll
+C:\repo\GItHub\Sistema Socio\Sistema-Socios-GRS\Logica\obj\Debug\Logica.pdb

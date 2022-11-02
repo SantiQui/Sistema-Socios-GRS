@@ -21,9 +21,13 @@ namespace WindowsFormsApp1
 
         private void btnAltaSocio_Click(object sender, EventArgs e)
         {
-            FRMAltaSocio frmAltaSocio = new FRMAltaSocio();
-            frmAltaSocio.Show();
-            this.Hide();
+            if (panel1.Visible == false)
+            {
+                panel1.Visible = true;
+            }else
+            {
+                panel1.Visible = false;
+            }
         }
 
         private void FRMSocio_Load(object sender, EventArgs e)
@@ -80,8 +84,38 @@ namespace WindowsFormsApp1
 
 
         }
-        
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Principal principal = new Principal();
+            dtgSocio.DataSource = principal.ValidarSocio();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnNuevoSocio_Click(object sender, EventArgs e)
+        {
+            FRMAltaSocio frmAltaSocio = new FRMAltaSocio();
+            frmAltaSocio.Show();
+            this.Hide();
+        }
+
+        private void btnAntiguoSocio_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Estas seguro que lo quieres dar de alta denuevo", "Alta Socio", MessageBoxButtons.YesNo);
+            if(result == DialogResult.Yes)
+            {
+                foreach (DataGridViewRow indice in dtgSocio.SelectedRows)
+                {
+                    int idSocio = Convert.ToInt32(indice.Cells[0].Value);
+                    Principal principal = new Principal();
+                    principal.NuevoAltaSocio(idSocio);
+                    break;
+                }
+            }
+        }
     }
 }

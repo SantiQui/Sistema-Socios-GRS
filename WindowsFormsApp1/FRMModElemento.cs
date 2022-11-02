@@ -42,5 +42,17 @@ namespace WindowsFormsApp1
             frmElemento.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FRMElemento frmElemento = new FRMElemento();
+            frmElemento.Show();
+            this.Hide();
+        }
     }
 }

@@ -44,5 +44,17 @@ namespace WindowsFormsApp1
             frmProfesor.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FRMProfesores frmProfesor = new FRMProfesores();
+            frmProfesor.Show();
+            this.Hide();
+        }
     }
 }

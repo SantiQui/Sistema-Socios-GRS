@@ -103,17 +103,17 @@
     <Compile Include="FRMElemento.Designer.cs">
       <DependentUpon>FRMElemento.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRMLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FRMLogin.Designer.cs">
-      <DependentUpon>FRMLogin.cs</DependentUpon>
-    </Compile>
     <Compile Include="FRMInicio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRMInicio.Designer.cs">
       <DependentUpon>FRMInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMLogin.Designer.cs">
+      <DependentUpon>FRMLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMModActividades.cs">
       <SubType>Form</SubType>
@@ -168,11 +168,11 @@
     <EmbeddedResource Include="FRMElemento.resx">
       <DependentUpon>FRMElemento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRMLogin.resx">
-      <DependentUpon>FRMLogin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FRMInicio.resx">
       <DependentUpon>FRMInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMLogin.resx">
+      <DependentUpon>FRMLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMAltaSocio.resx">
       <DependentUpon>FRMAltaSocio.cs</DependentUpon>

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.XPath;
 
 namespace WindowsFormsApp1
 {
@@ -20,9 +21,13 @@ namespace WindowsFormsApp1
 
         private void btnAltaProfesor_Click(object sender, EventArgs e)
         {
-            FRMAltaProfesor frmAltaProfesor = new FRMAltaProfesor();
-            frmAltaProfesor.Show();
-            this.Hide();
+            if(panel1.Visible == false)
+            {
+                panel1.Visible = true;
+            }else
+            {
+                panel1.Visible = false;
+            }
         }
 
         private void FRMProfesores_Load(object sender, EventArgs e)
@@ -73,6 +78,46 @@ namespace WindowsFormsApp1
             }
             profesorModificado.Show();
             this.Hide();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            Principal principal = new Principal();
+            dtgProfesor.DataSource = principal.ValidarProfesor();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FRMInicio frmInicio = new FRMInicio();
+            frmInicio.Show();
+            this.Hide();
+        }
+
+        private void btnNuevoProfesor_Click(object sender, EventArgs e)
+        {
+            FRMAltaProfesor frmAltaProfesor = new FRMAltaProfesor();
+            frmAltaProfesor.Show();
+            this.Hide();
+        }
+
+        private void btnAntiguoProfesor_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Desea dar de alta este profesor denuevo?", "Alta profesor", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                foreach (DataGridViewRow indice in dtgProfesor.SelectedRows)
+                {
+                    int idProfesor = Convert.ToInt32(indice.Cells[0].Value);
+                    Principal principal = new Principal();
+                    principal.NuevoAltaProfesor(idProfesor);
+                    break;
+                }
+            }
         }
     }
 }
