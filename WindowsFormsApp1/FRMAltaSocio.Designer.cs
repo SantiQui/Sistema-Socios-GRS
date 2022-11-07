@@ -83,6 +83,7 @@
             this.txtBNombre.Name = "txtBNombre";
             this.txtBNombre.Size = new System.Drawing.Size(272, 20);
             this.txtBNombre.TabIndex = 18;
+            this.txtBNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBNombre_KeyPress);
             // 
             // label2
             // 
@@ -101,6 +102,9 @@
             this.txtBApellido.Name = "txtBApellido";
             this.txtBApellido.Size = new System.Drawing.Size(272, 20);
             this.txtBApellido.TabIndex = 19;
+            this.txtBApellido.TextChanged += new System.EventHandler(this.txtBApellido_TextChanged);
+            this.txtBApellido.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBApellido_KeyDown);
+            this.txtBApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBApellido_KeyPress);
             // 
             // label1
             // 
@@ -123,10 +127,12 @@
             // 
             // txtBNroDoc
             // 
-            this.txtBNroDoc.Location = new System.Drawing.Point(158, 176);
+            this.txtBNroDoc.Location = new System.Drawing.Point(158, 175);
             this.txtBNroDoc.Name = "txtBNroDoc";
             this.txtBNroDoc.Size = new System.Drawing.Size(138, 20);
             this.txtBNroDoc.TabIndex = 20;
+            this.txtBNroDoc.TextChanged += new System.EventHandler(this.txtBNroDoc_TextChanged);
+            this.txtBNroDoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBNroDoc_KeyPress);
             // 
             // label3
             // 

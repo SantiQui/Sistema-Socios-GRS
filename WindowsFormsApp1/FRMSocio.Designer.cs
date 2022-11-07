@@ -44,17 +44,19 @@
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnModSocio = new System.Windows.Forms.Button();
             this.btnBajaSocio = new System.Windows.Forms.Button();
-            this.socioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnBack = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAntiguoSocio = new System.Windows.Forms.Button();
             this.btnNuevoSocio = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.txtBusqueda = new System.Windows.Forms.TextBox();
+            this.socioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dtgSocio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAltaSocio
@@ -186,10 +188,6 @@
             this.btnBajaSocio.UseVisualStyleBackColor = false;
             this.btnBajaSocio.Click += new System.EventHandler(this.btnBajaSocio_Click);
             // 
-            // socioBindingSource
-            // 
-            this.socioBindingSource.DataSource = typeof(Logica.Socio);
-            // 
             // btnBack
             // 
             this.btnBack.BackColor = System.Drawing.SystemColors.ControlText;
@@ -270,6 +268,31 @@
             this.btnNuevoSocio.UseVisualStyleBackColor = false;
             this.btnNuevoSocio.Click += new System.EventHandler(this.btnNuevoSocio_Click);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.DarkGreen;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(955, 40);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(63, 42);
+            this.button3.TabIndex = 12;
+            this.button3.Text = "Buscar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // txtBusqueda
+            // 
+            this.txtBusqueda.Location = new System.Drawing.Point(794, 52);
+            this.txtBusqueda.Name = "txtBusqueda";
+            this.txtBusqueda.Size = new System.Drawing.Size(144, 20);
+            this.txtBusqueda.TabIndex = 13;
+            this.txtBusqueda.Tag = "Ingrese nro de documento";
+            // 
+            // socioBindingSource
+            // 
+            this.socioBindingSource.DataSource = typeof(Logica.Socio);
+            // 
             // FRMSocio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -277,6 +300,8 @@
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1161, 701);
+            this.Controls.Add(this.txtBusqueda);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -293,9 +318,10 @@
             this.Load += new System.EventHandler(this.FRMSocio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgSocio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -323,5 +349,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnAntiguoSocio;
         private System.Windows.Forms.Button btnNuevoSocio;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtBusqueda;
     }
 }

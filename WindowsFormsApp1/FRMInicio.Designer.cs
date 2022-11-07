@@ -52,7 +52,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1160, 73);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+
             // 
             // btnProfesores
             // 
@@ -155,7 +155,6 @@
             this.Name = "FRMInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRMInicio";
-            this.Load += new System.EventHandler(this.FRMInicio_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

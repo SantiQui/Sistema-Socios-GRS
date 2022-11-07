@@ -67,7 +67,6 @@
             this.label4.Size = new System.Drawing.Size(371, 42);
             this.label4.TabIndex = 66;
             this.label4.Text = "Modificacion Profesor";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtBTipoDoc
             // 
@@ -94,6 +93,8 @@
             this.txtBNombre.Name = "txtBNombre";
             this.txtBNombre.Size = new System.Drawing.Size(272, 20);
             this.txtBNombre.TabIndex = 53;
+            this.txtBNombre.TextChanged += new System.EventHandler(this.txtBNombre_TextChanged);
+            this.txtBNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBNombre_KeyPress);
             // 
             // label2
             // 
@@ -112,6 +113,7 @@
             this.txtBApellido.Name = "txtBApellido";
             this.txtBApellido.Size = new System.Drawing.Size(272, 20);
             this.txtBApellido.TabIndex = 54;
+            this.txtBApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBApellido_KeyPress);
             // 
             // label1
             // 
@@ -138,6 +140,7 @@
             this.txtBNroDoc.Name = "txtBNroDoc";
             this.txtBNroDoc.Size = new System.Drawing.Size(138, 20);
             this.txtBNroDoc.TabIndex = 55;
+            this.txtBNroDoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBNroDoc_KeyPress);
             // 
             // label3
             // 

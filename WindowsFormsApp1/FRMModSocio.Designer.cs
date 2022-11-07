@@ -93,6 +93,7 @@
             this.txtBNombre.Name = "txtBNombre";
             this.txtBNombre.Size = new System.Drawing.Size(272, 20);
             this.txtBNombre.TabIndex = 36;
+            this.txtBNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBNombre_KeyPress);
             // 
             // label2
             // 
@@ -111,6 +112,7 @@
             this.txtBApellido.Name = "txtBApellido";
             this.txtBApellido.Size = new System.Drawing.Size(272, 20);
             this.txtBApellido.TabIndex = 37;
+            this.txtBApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBApellido_KeyPress);
             // 
             // label1
             // 
@@ -137,6 +139,7 @@
             this.txtBNroDoc.Name = "txtBNroDoc";
             this.txtBNroDoc.Size = new System.Drawing.Size(138, 20);
             this.txtBNroDoc.TabIndex = 38;
+            this.txtBNroDoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBNroDoc_KeyPress);
             // 
             // label3
             // 
@@ -191,7 +194,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(1056, 666);
+            this.btnGuardar.Location = new System.Drawing.Point(1058, 666);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(91, 23);
             this.btnGuardar.TabIndex = 34;
@@ -279,7 +282,6 @@
             this.Name = "FRMModSocio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRMModSocio";
-            this.Load += new System.EventHandler(this.FRMModSocio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

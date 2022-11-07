@@ -94,5 +94,13 @@ namespace WindowsFormsApp1
             this.Hide();
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Principal principal = new Principal();
+            string nombreElemento = txtBusqueda.Text.ToString();
+            dtgElemento.DataSource = principal.BuscarElementoPorNombre(nombreElemento);
+
+        }
     }
 }

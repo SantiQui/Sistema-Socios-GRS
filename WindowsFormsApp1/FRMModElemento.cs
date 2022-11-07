@@ -54,5 +54,55 @@ namespace WindowsFormsApp1
             frmElemento.Show();
             this.Hide();
         }
+
+        private void txtBCantidad_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtBCantidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se puede escribir numero", "Validacion", MessageBoxButtons.OK);
+            }
+        }
+
+        private void txtBNombre_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtBNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se puede escribir letras", "Validacion", MessageBoxButtons.OK);
+            }
+        }
     }
 }

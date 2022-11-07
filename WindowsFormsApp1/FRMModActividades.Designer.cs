@@ -54,7 +54,6 @@
             this.txtTitulo.Size = new System.Drawing.Size(377, 42);
             this.txtTitulo.TabIndex = 27;
             this.txtTitulo.Text = "Modificacion Actividad";
-            this.txtTitulo.Click += new System.EventHandler(this.txtTitulo_Click);
             // 
             // btnGuardar
             // 
@@ -90,6 +89,8 @@
             this.txtBInicio.Name = "txtBInicio";
             this.txtBInicio.Size = new System.Drawing.Size(100, 20);
             this.txtBInicio.TabIndex = 22;
+            this.txtBInicio.TextChanged += new System.EventHandler(this.txtBInicio_TextChanged);
+            this.txtBInicio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBInicio_KeyPress);
             // 
             // txtBProfesor
             // 
@@ -97,6 +98,8 @@
             this.txtBProfesor.Name = "txtBProfesor";
             this.txtBProfesor.Size = new System.Drawing.Size(229, 20);
             this.txtBProfesor.TabIndex = 21;
+            this.txtBProfesor.TextChanged += new System.EventHandler(this.txtBProfesor_TextChanged);
+            this.txtBProfesor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBProfesor_KeyPress);
             // 
             // txtBNombre
             // 
@@ -104,6 +107,8 @@
             this.txtBNombre.Name = "txtBNombre";
             this.txtBNombre.Size = new System.Drawing.Size(229, 20);
             this.txtBNombre.TabIndex = 20;
+            this.txtBNombre.TextChanged += new System.EventHandler(this.txtBNombre_TextChanged);
+            this.txtBNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBNombre_KeyPress);
             // 
             // txtHorario
             // 

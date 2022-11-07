@@ -1,1 +1,1 @@
-[{"idSocio":1,"direccion":"ngnggngn 211","activo":false,"dni":11111111,"nombre":"nnnn","apellido":"nnnnnn","fechaNac":"viernes, 31 de octubre de 2003","telefono":"3493444444","tipoDoc":"dni"}]
+[]

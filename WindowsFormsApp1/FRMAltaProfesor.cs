@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
             profesor.activo = true;
             profesor.dni = int.Parse(txtBNroDoc.Text);
             profesor.apellido = txtBApellido.Text;
-            profesor.telefono = txtBCelular.Text;
+            profesor.telefono = long.Parse(txtBCelular.Text);
             profesor.fechaNac = dtfechaNac.Text;
             profesor.nombre = txtBNombre.Text;
             profesor.correoElec = txtBCorreo.Text;
@@ -55,6 +55,84 @@ namespace WindowsFormsApp1
             FRMProfesores frmProfesor = new FRMProfesores();
             frmProfesor.Show();
             this.Hide();
+        }
+
+        private void txtBNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se puede escribir letras", "Validacion", MessageBoxButtons.OK);
+            }
+        }
+
+        private void txtBApellido_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBApellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se puede escribir letras", "Validacion", MessageBoxButtons.OK);
+            }
+        }
+
+        private void txtBNroDoc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBNroDoc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se puede escribir numeros", "Validacion", MessageBoxButtons.OK);
+            }
         }
     }
 }

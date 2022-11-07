@@ -48,6 +48,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAntiguoProfesor = new System.Windows.Forms.Button();
             this.btnNuevoProfesor = new System.Windows.Forms.Button();
+            this.txtBusqueda = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.profesorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgProfesor)).BeginInit();
             this.panel1.SuspendLayout();
@@ -246,12 +248,35 @@
             this.btnNuevoProfesor.UseVisualStyleBackColor = false;
             this.btnNuevoProfesor.Click += new System.EventHandler(this.btnNuevoProfesor_Click);
             // 
+            // txtBusqueda
+            // 
+            this.txtBusqueda.Location = new System.Drawing.Point(800, 75);
+            this.txtBusqueda.Name = "txtBusqueda";
+            this.txtBusqueda.Size = new System.Drawing.Size(144, 20);
+            this.txtBusqueda.TabIndex = 16;
+            this.txtBusqueda.Tag = "Ingrese nro de documento";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.DarkGreen;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(961, 63);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(63, 42);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "Buscar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // FRMProfesores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(1166, 701);
+            this.Controls.Add(this.txtBusqueda);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.button2);
@@ -269,6 +294,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgProfesor)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -292,5 +318,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnAntiguoProfesor;
         private System.Windows.Forms.Button btnNuevoProfesor;
+        private System.Windows.Forms.TextBox txtBusqueda;
+        private System.Windows.Forms.Button button3;
     }
 }

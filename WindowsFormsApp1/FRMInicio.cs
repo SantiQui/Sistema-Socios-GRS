@@ -17,16 +17,6 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void FRMInicio_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnSocios_Click(object sender, EventArgs e)
         {
             FRMSocio frmSocio = new FRMSocio();

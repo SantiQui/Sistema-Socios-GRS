@@ -42,6 +42,8 @@
             this.btnBajaActividad = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.txtBusqueda = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgActividad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.actividadBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -177,12 +179,35 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // txtBusqueda
+            // 
+            this.txtBusqueda.Location = new System.Drawing.Point(802, 91);
+            this.txtBusqueda.Name = "txtBusqueda";
+            this.txtBusqueda.Size = new System.Drawing.Size(144, 20);
+            this.txtBusqueda.TabIndex = 15;
+            this.txtBusqueda.Tag = "Ingrese nro de documento";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.DarkGreen;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(963, 79);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(63, 42);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "Buscar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // FRMActividad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(1161, 701);
+            this.Controls.Add(this.txtBusqueda);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnBajaActividad);
@@ -198,6 +223,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgActividad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.actividadBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -216,5 +242,7 @@
         private System.Windows.Forms.Button btnBajaActividad;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.TextBox txtBusqueda;
+        private System.Windows.Forms.Button button3;
     }
 }

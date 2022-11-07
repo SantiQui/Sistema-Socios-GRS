@@ -117,5 +117,19 @@ namespace WindowsFormsApp1
                 }
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Principal principal = new Principal();
+            int dniSocio = int.Parse(txtBusqueda.Text);
+            dtgSocio.DataSource = principal.BuscarSocioPorDni(dniSocio);
+        }
+
+        private void btnOrdenar_Click(object sender, EventArgs e)
+        {
+            //dtgSocio.Sort(dtgSocio.Columns[1], ListSortDirection.Ascending);
+            //var orderSocio = from e in Socio
+            //                 orderby e.idSocio
+        }
     }
 }

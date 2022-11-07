@@ -45,10 +45,6 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void txtTitulo_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -60,6 +56,84 @@ namespace WindowsFormsApp1
             FRMActividad frmActividad = new FRMActividad();
             frmActividad.Show();
             this.Hide();
+        }
+
+        private void txtBNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se puede escribir letras", "Validacion", MessageBoxButtons.OK);
+            }
+        }
+
+        private void txtBProfesor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBProfesor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se puede escribir letras", "Validacion", MessageBoxButtons.OK);
+            }
+        }
+
+        private void txtBInicio_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBInicio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //if (char.IsDigit(e.KeyChar))
+            //{
+            //    e.Handled = false;
+            //}
+            //else if (char.IsControl(e.KeyChar))
+            //{
+            //    e.Handled = false;
+            //}
+            //else if (char.IsSeparator(e.KeyChar))
+            //{
+            //    e.Handled = false;
+            //}
+            //else
+            //{
+            //    e.Handled = true;
+            //    MessageBox.Show("Solo se puede escribir una hora", "Validacion", MessageBoxButtons.OK);
+            //}
         }
     }
 }

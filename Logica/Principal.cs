@@ -65,14 +65,64 @@ namespace Logica
             return ListaElemento;
 
         }
-
-        List<Socio> nuevaListaSocio = new List<Socio>();
         public List<Socio> BuscarSocioPorDni(int dni)
         {
-            var SocioObtenido = ListaSocios.Find(x => dni == x.dni);
-            ListaSocios.Add(SocioObtenido);
-            return ListaSocios;
+            List<Socio> nuevaListaSocio = new List<Socio>();
+            ListaSocios = ValidarSocio();
+            if(ListaSocios == null)
+            {
+                return nuevaListaSocio;
+            }else
+            {
+                var SocioObtenido = ListaSocios.Find(x => dni == x.dni);
+                nuevaListaSocio.Add(SocioObtenido);
+                return nuevaListaSocio;
+            }
 
+        }
+        public List<Profesor> BuscarProfesorPorDni(int dni)
+        {
+            List<Profesor> nuevaListaProfesor = new List<Profesor>();
+            ListaProfesores = ValidarProfesor();
+            if(ListaProfesores == null)
+            {
+                return nuevaListaProfesor;
+                
+            }else
+            {
+                var ProfesorObtenido = ListaProfesores.Find(x => dni == x.dni);
+                nuevaListaProfesor.Add(ProfesorObtenido);
+                return nuevaListaProfesor;
+            }
+        }
+        public List<Elemento> BuscarElementoPorNombre(string nombre)
+        {
+            List<Elemento> nuevaListaElemento = new List<Elemento>();
+            ListaElemento = ValidarElemento();
+            if(ListaElemento == null)
+            {
+                return nuevaListaElemento;
+            }else
+            {
+                var ElementoObtenido = ListaElemento.Find(x => nombre == x.nombre);
+                nuevaListaElemento.Add(ElementoObtenido);
+                return nuevaListaElemento;
+            }
+        }
+        public List<Actividad> BuscarActividadPorNombre(string nombre)
+        {
+            List<Actividad> nuevaListaActividad = new List<Actividad>();
+            ListaActividades = ValidarActividad();
+            if(ListaActividades == null)
+            {
+                return nuevaListaActividad;
+
+            }else
+            {
+                var ActividadObtenida = ListaActividades.Find(x => nombre == x.nombre);
+                nuevaListaActividad.Add(ActividadObtenida);
+                return nuevaListaActividad;
+            }
         }
         public void AltaSocio(Socio socioNuevo)
         {
@@ -132,7 +182,6 @@ namespace Logica
             InstanciaPersistenciaDeDatos.GuardarArchivoProfesor(ListaProfesores);
 
         }
-
         public void AltaActividad(Actividad actividadNuevo)
         {
             Actividad nuevoActividad = new Actividad();
@@ -241,7 +290,6 @@ namespace Logica
             ListaElemento.Add(elementoModificado);
             InstanciaPersistenciaDeDatos.GuardarArchivoElemento(ListaElemento);
         }
-
         public void BajaSocio(int idSocio)
         {
             ListaSocios = ValidarSocio();
@@ -272,7 +320,6 @@ namespace Logica
             ListaElemento.Remove(elementoEliminado);
             InstanciaPersistenciaDeDatos.GuardarArchivoElemento(ListaElemento);
         }
-        
         public void NuevoAltaSocio(int idSocio)
         {
             ListaSocios = ValidarSocio();
@@ -287,6 +334,7 @@ namespace Logica
             profesorNuevo.activo = true;
             InstanciaPersistenciaDeDatos.GuardarArchivoProfesor(ListaProfesores);
         }
+        
     }
 
 }

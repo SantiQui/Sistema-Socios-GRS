@@ -68,6 +68,8 @@
             this.txtBCantidad.Name = "txtBCantidad";
             this.txtBCantidad.Size = new System.Drawing.Size(122, 20);
             this.txtBCantidad.TabIndex = 21;
+            this.txtBCantidad.TextChanged += new System.EventHandler(this.txtBCantidad_TextChanged);
+            this.txtBCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBCantidad_KeyPress);
             // 
             // txtBId
             // 
@@ -104,6 +106,8 @@
             this.txtBNombre.Name = "txtBNombre";
             this.txtBNombre.Size = new System.Drawing.Size(218, 20);
             this.txtBNombre.TabIndex = 20;
+            this.txtBNombre.TextChanged += new System.EventHandler(this.txtBNombre_TextChanged);
+            this.txtBNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBNombre_KeyPress);
             // 
             // btnGuardar
             // 

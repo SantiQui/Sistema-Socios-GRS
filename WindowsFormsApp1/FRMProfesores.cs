@@ -29,20 +29,11 @@ namespace WindowsFormsApp1
                 panel1.Visible = false;
             }
         }
-
         private void FRMProfesores_Load(object sender, EventArgs e)
         {
             Principal principal = new Principal();
             dtgProfesor.DataSource = principal.ValidarProfesor();
         }
-
-        private void btnVolver_Click(object sender, EventArgs e)
-        {
-            FRMInicio frmInicio = new FRMInicio();
-            frmInicio.Show();
-            this.Hide();
-        }
-
         private void btnBajaProfesor_Click(object sender, EventArgs e)
         {
             DialogResult r = MessageBox.Show("Desea dar de baja este profesor?", "Baja profesor", MessageBoxButtons.YesNo);
@@ -57,7 +48,6 @@ namespace WindowsFormsApp1
             }
 
         }
-
         private void btnModProfeosr_Click(object sender, EventArgs e)
         {
             FRMModProfesor profesorModificado = new FRMModProfesor();
@@ -79,32 +69,27 @@ namespace WindowsFormsApp1
             profesorModificado.Show();
             this.Hide();
         }
-
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             Principal principal = new Principal();
             dtgProfesor.DataSource = principal.ValidarProfesor();
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void btnBack_Click(object sender, EventArgs e)
         {
             FRMInicio frmInicio = new FRMInicio();
             frmInicio.Show();
             this.Hide();
         }
-
         private void btnNuevoProfesor_Click(object sender, EventArgs e)
         {
             FRMAltaProfesor frmAltaProfesor = new FRMAltaProfesor();
             frmAltaProfesor.Show();
             this.Hide();
         }
-
         private void btnAntiguoProfesor_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Desea dar de alta este profesor denuevo?", "Alta profesor", MessageBoxButtons.YesNo);
@@ -118,6 +103,12 @@ namespace WindowsFormsApp1
                     break;
                 }
             }
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Principal principal = new Principal();
+            int dniProfesor = int.Parse(txtBusqueda.Text);
+            dtgProfesor.DataSource = principal.BuscarProfesorPorDni(dniProfesor);
         }
     }
 }

@@ -89,5 +89,13 @@ namespace WindowsFormsApp1
             frmInicio.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Principal principal = new Principal();
+            string nombreActividad = txtBusqueda.Text.ToString();
+            dtgActividad.DataSource = principal.BuscarActividadPorNombre(nombreActividad);
+        }
+
     }
 }
